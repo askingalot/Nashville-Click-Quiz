@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <!--
+    This is the HTML file
+    It contains the 'markup' for our web applicaiton.
+    Various elements on the web page are denoted with <element></element> 'tags'
+    Notice the hierarchical nature of this file.  Order is important.
+  -->
+
+<head>
+  <title>Nashville Click Quiz</title>
+  <!-- This is how we include our Cascading Style Sheet file. Near the top.-->
+  <link href="css/site.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="container">
+    <div id='spoken-words-area'>
+      <span id='spoken-words'></span>
+    </div>
+    <div id='questioner'>
+      <img src="images/bear.gif"/>
+    </div>
+    <div id='answer-area'>
+      <input id='answer' type='test'/>
+      <button id='submit-answer'>Go!</button>
+    </div>
+  </div>
+
+  <!-- This is how we include our JavaScript files. Near the bottom.-->
+
+  <!-- This is a popular library for working with html -->
+  <script src="js/lib/jquery-1.10.2.js"></script>
+
+  <!-- This is the code for our application -->
+	<script src='js/app.js'></script>
+</body>
+</html>
