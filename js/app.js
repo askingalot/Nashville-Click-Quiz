@@ -69,7 +69,12 @@
       // If we have not reach the last question, we should ask another
       ask(questions, index, reviewAnswer)
     } else {
+      //after we've asked all the questions we can wrap things up...
+      afterQuestions();
+    }
+  });
 
+  function afterQuestions() {
       // When we have reached the last question, tell the user how he/she did.
       say('You got ' + score + ' out of ' + questions.length + ' correct!');
 
@@ -79,12 +84,12 @@
       } else {
         say("Looks like it's time to hit the books!")
       }
-    }
-  });
+  }
 
   // That's the end of the main action
   // What you'll find below gets pretty advanced.
   // Don't be afraid of it, but don't worry if it's not clear.
+
 
 
   /*****************************************************
